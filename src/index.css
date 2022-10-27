@@ -15,7 +15,7 @@
     --color-bg-variant: #2c2c6c;
     --color-primary: #000000;
     --color-primary-variant: #323231;
-    --color-accent: #cf4500;
+    --color-accent: #916217;
     --color-white: #FFFFFF;
     --color-light: rgba(255, 255, 255, 0.6);
 
@@ -36,17 +36,12 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: var(--color-bg);
+    background: var(--color-white);
     color: var(--color-white);
     line-height: 1.7;
 }
 
 /* general styles */
-
-.container {
-    width: var(--container-width-lg);
-    margin: 0 auto;
-}
 
 h1,
 h2,
@@ -58,21 +53,6 @@ h5{
 
 h1 {
     font-size: 2.5rem;
-}
-
-section{
-    margin-top: 8rem;
-    height: 100vh;
-}
-
-section > h2, section > h5 {
-    text-align: center;
-    color: var(--color-light);
-}
-
-section > h2 {
-    color: var(--color-primary);
-    margin-bottom: 3rem;
 }
 
 .text-light {
@@ -114,26 +94,4 @@ img {
     display: block;
     width: 100%;
     object-fit: cover;
-}
-
-/* media queries (small devices)*/
-@media screen and (max-width: 600px) {
-    .container {
-        width: var(--container-width-sm);
-    }
-
-    section > h2 {
-        margin-bottom: 2rem;
-    }
-}
-
-/* media queries (medium devices)*/
-@media screen and (max-width: 1024px) {
-    .container {
-        width: var(--container-width-md);
-    }
-
-    section > h2 {
-        margin-bottom: 6rem;
-    }
 }
