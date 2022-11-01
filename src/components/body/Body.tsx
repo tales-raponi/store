@@ -27,7 +27,9 @@ const Body = () => {
         <div className="price__container">
           <span>$ 1.000.000,00</span>
         </div>
-        <div className="description__container"></div>
+        <div className="description__container">
+          <h2></h2>
+        </div>
       </div>
     </section>
   );
