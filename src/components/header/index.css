@@ -20,6 +20,7 @@
 }
 
 .dropdown__container{
+    z-index: 1;
     position: absolute;
     top: 101.5px;
     text-align: center;
