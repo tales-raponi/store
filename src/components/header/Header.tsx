@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import "./index.css";
 import { HiMenu } from "react-icons/hi";
 import { BsXDiamond } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -10,12 +11,26 @@ const Header = () => {
   return (
     <section id={"header"}>
       <div className="header__container">
-        <h1>Luxury Houses</h1>
-        <a href="#houses">Houses</a>
-        <a href="#farms">Farms</a>
-        <a href="#flats">Flats</a>
-        <a href="#hotel">Hotel</a>
-        <a href="#castles">Castles</a>
+        <h1>
+          <Link to={"/"} style={{ fontSize: "2.5rem" }}>
+            Luxury Houses
+          </Link>
+        </h1>
+        <a>
+          <Link to={"/houses"}>Houses</Link>
+        </a>
+        <a>
+          <Link to={"/farms"}>Farms</Link>
+        </a>
+        <a>
+          <Link to={"/flats"}>Flats</Link>
+        </a>
+        <a>
+          <Link to={"/hotels"}>Hotel</Link>
+        </a>
+        <a>
+          <Link to={"/castles"}>Castles</Link>
+        </a>
         <span onClick={() => setOpen(!open)}>
           <HiMenu />
         </span>

@@ -80,3 +80,51 @@
     color: grey;
     text-align: justify;
 }
+
+.pagination__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    color: var(--color-bg)
+}
+
+.pagination__container a {
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    height: 40px;
+    width: 40px;
+    border-color: var(--color-accent);
+    transition: all 400ms ease;
+}
+
+.pagination__container a:hover {
+    color: var(--color-white);
+    border-color: var(--color-accent);
+    background: var(--color-accent);
+}
+
+.pagination__container span {
+    cursor: pointer;
+    margin-top: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--color-accent);
+    height: 25px;
+    width: 25px;
+    border-color: var(--color-accent);
+}
+
+.pagination__container span:hover {
+    color: var(--color-white);
+    border-color: var(--color-accent);
+    background: var(--color-accent);
+}

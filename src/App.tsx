@@ -1,14 +1,11 @@
 import React from "react";
-import Home from "./components/header/Header";
-import Body from "./components/body/Body";
-import Footer from "./components/footer/Footer";
+import House from "./components/house/House";
+import { Link } from "react-router-dom";
 
 const App = () => {
   return (
     <div className="body">
-      <Home />
-      <Body />
-      <Footer />
+      <Link to={"/houses"}>Link to Houses</Link>
     </div>
   );
 };
