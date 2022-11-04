@@ -1,0 +1,35 @@
+.carousel__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.image__container {
+    margin: 0 auto;
+    height: 50%;
+    width: 50%;
+
+    -webkit-animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.carousel__container h2 {
+    margin: 1rem 0 0rem 0;
+    color: var(--color-bg);
+}
+
+.title {
+    font-size: 2rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 30%;
+}
