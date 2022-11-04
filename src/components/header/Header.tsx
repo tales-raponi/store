@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const nodeRef = useRef(null);
 
   return (
     <section id={"header"}>
@@ -44,7 +43,10 @@ const Header = () => {
             <a href="">Magazine</a>{" "}
           </li>
           <li>
-            <a href="https://generator.lorem-ipsum.info/terms-and-conditions">
+            <a
+              href="https://generator.lorem-ipsum.info/terms-and-conditions"
+              target={"_blank"}
+            >
               Terms and Conditions
             </a>
           </li>
