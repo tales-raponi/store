@@ -1,0 +1,90 @@
+.home__main__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.home__title__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 40.16rem;
+}
+
+.home__title__container h1 {
+    margin-top: 8rem;
+    font-size: 6rem;
+    color: var(--color-white);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.home__title__container h2 {
+    color: var(--color-white);
+    border-width: 2px;
+    margin-bottom: 10rem;
+}   
+
+.home__title__container a {
+    color: var(--color-white);
+    font-size: 3rem;
+}
+
+.video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+
+.home__description__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.home__description__container h1 {
+    font-size: 2rem;
+    color: var(--color-accent);
+}
+
+.line__container {
+    align-items: center;
+    width: 80%;
+    align-self: center;
+    gap: 4rem;
+    margin: 1em -1em;
+}
+
+.one__line::before {
+    background: var(--color-accent);
+}
+
+.one__line::after {
+    background: var(--color-accent);
+}
+
+.line__container::before {
+    height: .1px;
+    margin: 0 1em;
+}
+
+.line__container::after {
+    height: .1px;
+    margin: 0 1em;
+}
+
+.divider {
+    display: flex;
+}
+
+.divider::before {
+    content: "";
+    flex: 1;
+}
+
+.divider::after {
+    content: "";
+    flex: 1;
+}
