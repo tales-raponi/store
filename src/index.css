@@ -8,8 +8,6 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    scrollbar-width: auto;
-    scrollbar-color: var(--color-accent) #ffffff;
 }
 
 :root {
