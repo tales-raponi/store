@@ -1,38 +1,32 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import "./index.css";
 import { HiMenu } from "react-icons/hi";
 import { BsXDiamond } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
 
+  const navigate = useNavigate();
+
+  const width = window.innerWidth;
+
+  console.log("Height: ", window.innerWidth);
+
   return (
     <section id={"header"}>
       <div className="header__container">
-        <h1>
-          <Link to={"/"} style={{ fontSize: "2.5rem" }}>
-            Luxury Houses
-          </Link>
-        </h1>
-        <a>
-          <Link to={"/houses"}>Houses</Link>
-        </a>
-        <a>
-          <Link to={"/farms"}>Farms</Link>
-        </a>
-        <a>
-          <Link to={"/flats"}>Flats</Link>
-        </a>
-        <a>
-          <Link to={"/hotels"}>Hotel</Link>
-        </a>
-        <a>
-          <Link to={"/castles"}>Castles</Link>
-        </a>
-        <span onClick={() => setOpen(!open)}>
+        {width < 600 ? null : (
+          <h1 onClick={() => navigate("/")}>Luxury Houses</h1>
+        )}
+        <a onClick={() => navigate("/houses")}>Houses</a>
+        <a onClick={() => navigate("/farms")}>Farms</a>
+        <a onClick={() => navigate("/flats")}>Flats</a>
+        <a onClick={() => navigate("/hotels")}>Hotel</a>
+        <a onClick={() => navigate("/castles")}>Castles</a>
+        <a onClick={() => setOpen(!open)}>
           <HiMenu />
-        </span>
+        </a>
       </div>
       {open == true ? (
         <ul className="dropdown__container">

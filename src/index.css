@@ -22,10 +22,6 @@
     --color-light: rgba(255, 255, 255, 0.6);
 
     --transition: all 400ms ease;
-
-    --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-sm: 90%;
 }
 
 html {
@@ -154,4 +150,18 @@ img {
     display: block;
     width: 100%;
     object-fit: cover;
+}
+
+/* media queries (small devices)*/
+@media screen and (max-width: 600px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* media queries (medium devices)*/
+@media screen and (max-width: 1024px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
