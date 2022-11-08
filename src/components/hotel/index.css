@@ -3,7 +3,7 @@
     height: 50%;
 }
 
-.house-prop__container {
+.hotel-prop__container {
     display: flex;
     flex-direction: column;
     color: var(--color-bg);
@@ -22,7 +22,7 @@
     font-size: 1.5rem;
 }
 
-.house-prop__container h5{
+.hotel-prop__container h5{
     display: flex;
     align-items: center;
     font-size: .9rem;
@@ -64,7 +64,7 @@
     to {opacity: 1;}
 }
 
-.house__container {
+.hotel__container {
     display: flex;
     position: relative;
     padding: 2rem;
