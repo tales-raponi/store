@@ -3,10 +3,23 @@
     flex-direction: column;
 }
 
+.image__container span{
+    margin-top: 12rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    font-size: 2rem;
+    height: 20rem;
+}
+
 .image__container {
+    display: flex;
+    flex-direction: row;
+    color: var(--color-bg);
+    justify-content: center;
     margin: 0 auto;
     height: 50%;
     width: 50%;
+    animation: normal;
 
     -webkit-animation: fadein 2s;
 }
