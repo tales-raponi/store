@@ -1,7 +1,6 @@
 .carousel__container {
     display: flex;
     flex-direction: column;
-    height: 18rem;
 }
 
 .image__container span{
