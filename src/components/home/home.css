@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 38.3rem;
 }
 
 .home__title__container h1 {
@@ -92,9 +91,6 @@
 
 /* media queries (medium devices)*/
 @media screen and (max-width: 1024px) {
-    .home__title__container {
-        height: 25rem;
-    }
 
     .home__main__container a {  
         font-size: 3rem;
@@ -114,12 +110,12 @@
 
     .home__description__container {
         height: 22rem;
-        margin-top: 12.7rem;
+        margin-top: 10rem;
     }
 
     .home__description__container h1{
         font-size: 1.3rem;
-        margin-top: 0rem;
+        margin-top: 3rem;
     }
 
 

@@ -6,6 +6,8 @@ import video from "../../assets/videos/video1.mp4";
 import Carousel from "../carousel/Carousel";
 
 const Home = () => {
+  const width = window.innerWidth;
+
   return (
     <div className="home__main__container">
       <div className="home__title__container">
@@ -14,9 +16,11 @@ const Home = () => {
           Luxury Houses
         </h1>
         <h2>A new concept of luxe houses.</h2>
-        <a href="#about">
-          <IoMdArrowDropdownCircle />
-        </a>
+        {width < 1024 ? null : (
+          <a href="#about">
+            <IoMdArrowDropdownCircle />
+          </a>
+        )}
         <video autoPlay muted loop className="video">
           <source src={video} type="video/mp4" />
         </video>
