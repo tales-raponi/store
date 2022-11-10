@@ -11,20 +11,24 @@ import "./index.css";
 const Carousel = () => {
   const [index, setIndex] = useState(0);
 
+  const width = window.innerWidth;
+
   const st = ["Houses", "Farms", "Flats", "Hotel", "Castles"];
 
   return (
     <div className="carousel__container">
       <div className="image__container">
-        <span
-          onClick={() => {
-            if (index !== 0) {
-              setIndex(index - 1);
-            }
-          }}
-        >
-          <AiOutlineLeft style={{ cursor: "pointer" }} />
-        </span>
+        {width < 1024 ? null : (
+          <span
+            onClick={() => {
+              if (index !== 0) {
+                setIndex(index - 1);
+              }
+            }}
+          >
+            <AiOutlineLeft style={{ cursor: "pointer" }} />
+          </span>
+        )}
         <img
           src={
             index === 0
@@ -39,15 +43,17 @@ const Carousel = () => {
           }
           alt=""
         />
-        <span
-          onClick={() => {
-            if (index !== 4) {
-              setIndex(index + 1);
-            }
-          }}
-        >
-          <AiOutlineRight style={{ cursor: "pointer" }} />
-        </span>
+        {width < 1024 ? null : (
+          <span
+            onClick={() => {
+              if (index !== 4) {
+                setIndex(index + 1);
+              }
+            }}
+          >
+            <AiOutlineRight style={{ cursor: "pointer" }} />
+          </span>
+        )}
       </div>
       <h2 className="title">{st[index]}</h2>
       <h2>
