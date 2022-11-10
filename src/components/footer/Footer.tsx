@@ -17,10 +17,13 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://www.linkedin.com/in/tales-raponi-361a61143/">
+        <a
+          href="https://www.linkedin.com/in/tales-raponi-361a61143/"
+          target={"_blank"}
+        >
           <BsLinkedin />
         </a>
-        <a href="https://github.com/tales-raponi">
+        <a href="https://github.com/tales-raponi" target={"_blank"}>
           <FaGithub />
         </a>
       </div>

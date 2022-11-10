@@ -1,6 +1,7 @@
 .carousel__container {
     display: flex;
     flex-direction: column;
+    height: 18rem;
 }
 
 .image__container span{
@@ -45,4 +46,12 @@
     align-self: center;
     justify-content: center;
     width: 30%;
+}
+
+/* media queries (medium devices)*/
+@media screen and (max-width: 1024px) {
+    .image__container {
+        height: 25rem;
+        width: 90%;
+    }
 }

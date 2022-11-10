@@ -22,7 +22,9 @@ const Home = () => {
         </video>
       </div>
       <div className="home__description__container" id={"about"}>
-        <h1>Five home styles, choose your own</h1>
+        <h1 className="home__description__container">
+          Five home styles, choose your own
+        </h1>
         <h2
           className="divider line__container one__line"
           contentEditable={true}
