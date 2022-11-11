@@ -2,8 +2,11 @@ import React from "react";
 import "./index.css";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <footer>
       <a href="#" className="footer__logo">
@@ -12,7 +15,9 @@ const Footer = () => {
 
       <ul className="permalinks">
         <li>
-          <a href="#">Home</a>
+          <a onClick={() => navigate("/")} href={"#"}>
+            Home
+          </a>
         </li>
       </ul>
 
