@@ -26,7 +26,6 @@ root.render(
         <Route path="farms" element={<Farm />} />
         <Route path="flats" element={<Flat />} />
         <Route path="hotels" element={<Hotel />} />
-        <Route path="test" element={<MHouse />} />
       </Routes>
       <Footer />
     </div>
